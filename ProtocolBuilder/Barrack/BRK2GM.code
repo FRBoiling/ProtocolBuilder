@@ -1,0 +1,6 @@
+syntax = "proto2";
+package protocol.barrack.global;
+
+message MSG_BRK2GM_HEARTBEAT 0x620001
+{
+}

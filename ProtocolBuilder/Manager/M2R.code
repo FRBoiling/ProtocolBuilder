@@ -1,0 +1,6 @@
+syntax = "proto2";
+package protocol.manager.relation;
+
+message MSG_M2R_HEARTBEAT 0x350001
+{
+}

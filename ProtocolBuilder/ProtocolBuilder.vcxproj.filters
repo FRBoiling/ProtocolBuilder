@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="Gate\G2GM.code">
+      <Filter>Gate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Gate\G2M.code">
+      <Filter>Gate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Gate\G2Z.code">
+      <Filter>Gate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Client\C2G.code">
+      <Filter>Client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Client\G2C.code">
+      <Filter>Client</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Global\GM2BRK.code">
+      <Filter>Global</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Global\GM2G.code">
+      <Filter>Global</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Global\GM2M.code">
+      <Filter>Global</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Global\GM2R.code">
+      <Filter>Global</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Global\GM2Z.code">
+      <Filter>Global</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Manager\M2G.code">
+      <Filter>Manager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Manager\M2GM.code">
+      <Filter>Manager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Manager\M2M.code">
+      <Filter>Manager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Manager\M2R.code">
+      <Filter>Manager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Manager\M2Z.code">
+      <Filter>Manager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Relation\R2GM.code">
+      <Filter>Relation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Relation\R2M.code">
+      <Filter>Relation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Relation\R2R.code">
+      <Filter>Relation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Relation\R2Z.code">
+      <Filter>Relation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Barrack\BRK2G.code">
+      <Filter>Barrack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Barrack\BRK2GM.code">
+      <Filter>Barrack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Barrack\BRK2M.code">
+      <Filter>Barrack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MsgId\Id.code">
+      <Filter>MsgId</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Zone\Z2G.code">
+      <Filter>Zone</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Zone\Z2GM.code">
+      <Filter>Zone</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Zone\Z2M.code">
+      <Filter>Zone</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Zone\Z2R.code">
+      <Filter>Zone</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Server\ServerRegister.code">
+      <Filter>ServerRegister</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Gate">
+      <UniqueIdentifier>{669b92b3-e77d-41c0-b212-cb08b77231fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{264e4316-b5ad-435c-a243-2d573399eff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{d07c048c-fcd5-476b-bf40-436b5088b89f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{773ebde6-17eb-48a2-8ed1-408f4fc6697f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Relation">
+      <UniqueIdentifier>{0a705540-efe6-4bcb-85f4-cbf092761fd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Barrack">
+      <UniqueIdentifier>{544c9690-fdb6-4387-be7d-565ce838a0e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MsgId">
+      <UniqueIdentifier>{496a96b8-a07e-47f0-94be-f4d2d5d81800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zone">
+      <UniqueIdentifier>{9f569d45-f40f-40c3-916e-bdb779c69b60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerRegister">
+      <UniqueIdentifier>{d7f15601-73e3-46ce-9093-1eee78a969ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

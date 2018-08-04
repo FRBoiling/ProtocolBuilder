@@ -1,0 +1,14 @@
+syntax = "proto2";
+package protocol.manager.gate;
+
+message MSG_M2G_HEARTBEAT 0x310001
+{
+}
+
+message MSG_M2G_MAX_UID 0x310002
+{
+	required int32 result = 1;
+	required string accountName = 2;
+	required int32 maxUid = 3;
+	required string channelName = 4;
+}

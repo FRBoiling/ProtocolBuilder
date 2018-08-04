@@ -1,0 +1,7 @@
+syntax = "proto2";
+package protocol.zone.relation;
+
+message MSG_Z2R_HEARTBEAT 
+{
+}
+

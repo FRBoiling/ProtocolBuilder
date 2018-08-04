@@ -1,0 +1,6 @@
+syntax = "proto2";
+package protocol.relation.relation;
+
+message MSG_R2R_HEARTBEAT 0x550001
+{
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+package protocol.gate.manager;
+
+message MSG_G2M_HEARTBEAT 0x130001
+{
+}
+
+message MSG_G2M_MAX_UID 0x130002
+{
+	required string accountName = 1;
+	required string channelName = 2;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+package protocol.relation.manager;
+
+message MSG_R2M_HEARTBEAT 
+{
+}
+

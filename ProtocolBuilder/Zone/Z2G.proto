@@ -1,0 +1,7 @@
+syntax = "proto2";
+package protocol.zone.gate;
+
+message MSG_Z2G_HEARTBEAT 
+{
+}
+
