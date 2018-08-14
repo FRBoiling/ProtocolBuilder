@@ -10,12 +10,6 @@
     <CustomBuild Include="Gate\G2Z.code">
       <Filter>Gate</Filter>
     </CustomBuild>
-    <CustomBuild Include="Client\C2G.code">
-      <Filter>Client</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Client\G2C.code">
-      <Filter>Client</Filter>
-    </CustomBuild>
     <CustomBuild Include="Global\GM2BRK.code">
       <Filter>Global</Filter>
     </CustomBuild>
@@ -84,6 +78,9 @@
     </CustomBuild>
     <CustomBuild Include="Server\ServerRegister.code">
       <Filter>ServerRegister</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Client\Client.code">
+      <Filter>Client</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

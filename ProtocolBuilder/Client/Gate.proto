@@ -1,0 +1,40 @@
+syntax = "proto2";
+package protocol.client;
+
+message MSG_CG_USER_LOGIN 
+{
+	required string accountName = 1;
+	required string token = 2;
+	required string version = 3;
+	required string deviceId = 4;
+	required string registerId = 5;
+	required string channelName = 6;
+	required int32 groupId = 7;
+}
+
+message MSG_GC_USER_LOGIN 
+{
+	required int32 result = 1;
+	required string accountName = 2;
+	optional string token=3;
+}
+
+message MSG_CG_RECONNECT_LOGIN 
+{
+	required string accountName =1;
+	required string token = 2;
+	required int32 uid = 3;
+	required string oldBlowFish = 4;
+}
+
+message MSG_GC_RECONNECT_LOGIN 
+{
+	required int32 result = 1;
+}
+
+message MSG_CG_CREATE_CHARACTER 
+{
+	required string name = 1;
+	required int32 sex = 2;
+}
+

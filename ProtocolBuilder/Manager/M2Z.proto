@@ -5,3 +5,8 @@ message MSG_M2Z_HEARTBEAT
 {
 }
 
+message MSG_M2Z_REPEAT_LOGIN 
+{
+	required int32 Uid = 1;
+}
+

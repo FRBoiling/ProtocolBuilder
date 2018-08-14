@@ -1,0 +1,58 @@
+syntax = "proto2";
+package protocol.client;
+
+message MSG_CG_USER_LOGIN 0x100001
+{
+	required string username = 1;
+	required string password = 2;
+
+	required string version = 3;
+	required string deviceId = 4;
+	required string registerId = 5;
+	required string channelName = 6;
+
+	required int32 groupId = 7;
+	required string token = 8;
+}
+
+message MSG_GC_USER_LOGIN 0x100002
+{
+	required int32 result = 1;
+	required string username = 2;
+	optional string token=3;
+	repeated ROLE_INFO roleList = 4;
+}
+
+
+message MSG_CG_RECONNECT_LOGIN 0x100003
+{
+	required string username =1;
+	required string token = 2;
+
+	required int32 uid = 3;
+	required string oldBlowFish = 4;
+}
+
+message MSG_GC_RECONNECT_LOGIN 0x100004
+{
+	required int32 result = 1;
+}
+
+message ROLE_INFO 0x100005
+{
+	optional int32 uid =1;
+	required string name = 2;
+	optional int32 sex = 3;
+	optional int32 faceIconId = 4;
+}
+
+message MSG_CG_CREATE_ROLE 0x100006
+{
+	required ROLE_INFO roleInfo = 1;
+}
+
+message MSG_GC_CREATE_ROLE 0x100007
+{
+	required int32 result = 1;
+	required ROLE_INFO roleInfo = 2;
+}

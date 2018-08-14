@@ -5,3 +5,11 @@ message MSG_M2G_HEARTBEAT
 {
 }
 
+message MSG_M2G_MAX_UID 
+{
+	required int32 result = 1;
+	required string username = 2;
+	required int32 maxUid = 3;
+	required string channelName = 4;
+}
+

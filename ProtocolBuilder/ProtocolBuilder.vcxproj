@@ -22,7 +22,7 @@
     <ProjectGuid>{D1F92E0F-674C-493E-8970-A36CD9A401D1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ProtocolBuilder</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -75,7 +75,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <OutDir>$(SolutionDir)..\Protocol\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -83,7 +83,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)Bin\</OutDir>
+    <OutDir>$(SolutionDir)..\Protocol\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -110,6 +110,12 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)..\Protocol\*.java  $(SolutionDir)..\ServerCluster-Java\protocol\src\main\  /s /y /d
+xcopy $(SolutionDir)..\Protocol\*.cs  $(SolutionDir)..\TestTools\ProtocolTestTool\ClientProtocolLib\  /s /y /d
+xcopy $(SolutionDir)..\Protocol\*.cs  $(SolutionDir)..\Client\  /s /y /d</Command>
+      <Message>复制文件到指定目录</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -144,6 +150,12 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)..\Protocol\*.java  $(SolutionDir)..\ServerCluster-Java\protocol\src\main\  /s /y /d
+xcopy $(SolutionDir)..\Protocol\*.cs  $(SolutionDir)..\TestTools\ProtocolTestTool\ClientProtocolLib\  /s /y /d
+xcopy $(SolutionDir)..\Protocol\*.cs  $(SolutionDir)..\Client\  /s /y /d</Command>
+      <Message>复制文件到指定目录</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -245,14 +257,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Client\C2G.code">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)ProtocolBuffers\Generater --operate_type=all --input_path=$(ProjectDir) --output_path=$(SolutionDir)..\Protocol\ --filename=%(FullPath)</Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)ProtocolBuffers\Generater --operate_type=all --input_path=$(ProjectDir) --output_path=$(SolutionDir)..\Protocol\ --filename=%(FullPath)</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).proto</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).proto</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="Client\G2C.code">
+    <CustomBuild Include="Client\Client.code">
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)ProtocolBuffers\Generater --operate_type=all --input_path=$(ProjectDir) --output_path=$(SolutionDir)..\Protocol\ --filename=%(FullPath)</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)ProtocolBuffers\Generater --operate_type=all --input_path=$(ProjectDir) --output_path=$(SolutionDir)..\Protocol\ --filename=%(FullPath)</Command>

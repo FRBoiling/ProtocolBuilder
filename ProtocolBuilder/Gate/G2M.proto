@@ -5,3 +5,14 @@ message MSG_G2M_HEARTBEAT
 {
 }
 
+message MSG_G2M_REPEAT_LOGIN 
+{
+	required int32 uid = 1;
+}
+
+message MSG_G2M_MAX_UID 
+{
+	required string username = 1;
+	required string channelName = 2;
+}
+
