@@ -13,5 +13,5 @@ message MSG_G2M_REPEAT_LOGIN 0x130002
 message MSG_G2M_MAX_UID 0x130003
 {
 	required string username = 1;
-	required string channelName = 2;
+	required int32 areaId = 2;
 }

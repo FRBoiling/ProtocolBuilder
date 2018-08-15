@@ -5,20 +5,29 @@ message MSG_CG_USER_LOGIN
 {
 	required string username = 1;
 	required string password = 2;
-	required string version = 3;
-	required string deviceId = 4;
-	required string registerId = 5;
-	required string channelName = 6;
-	required int32 groupId = 7;
-	required string token = 8;
+	required int32 areaId = 3;
+	required string version = 5;
+	required string deviceId = 6;
+	required string registerId = 7;
+	required string channelName = 8;
+	required string token = 9;
+}
+
+message ROLE_LOGIN_INFO 
+{
+	optional int32 uid =1;
+	required string name = 2;
+	required int32 areaId=3;
+	required int32 originalAreaId =4;
 }
 
 message MSG_GC_USER_LOGIN 
 {
 	required int32 result = 1;
 	required string username = 2;
-	optional string token=3;
-	repeated ROLE_INFO roleList = 4;
+	required int32 areaId = 3; 
+	optional string token = 4;
+	repeated ROLE_LOGIN_INFO roleList = 5;
 }
 
 message MSG_CG_RECONNECT_LOGIN 
@@ -34,22 +43,22 @@ message MSG_GC_RECONNECT_LOGIN
 	required int32 result = 1;
 }
 
+message MSG_CG_CREATE_ROLE 
+{
+	required string name = 1;
+	optional int32 areaId = 2;
+}
+
 message ROLE_INFO 
 {
 	optional int32 uid =1;
 	required string name = 2;
-	optional int32 sex = 3;
-	optional int32 faceIconId = 4;
-}
-
-message MSG_CG_CREATE_ROLE 
-{
-	required ROLE_INFO roleInfo = 1;
+	optional int32 areaId = 3;
 }
 
 message MSG_GC_CREATE_ROLE 
 {
 	required int32 result = 1;
-	required ROLE_INFO roleInfo = 2;
+	optional ROLE_INFO roleInfo = 2;
 }
 

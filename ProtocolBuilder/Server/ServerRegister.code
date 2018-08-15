@@ -4,7 +4,7 @@ package protocol.server.register;
 message Server_Tag 0xff0000
 {
 	required int32 serverType= 1;
-	optional int32 groupId = 2;
+	optional int32 areaId = 2;
 	optional int32 subId = 3;
 }
 

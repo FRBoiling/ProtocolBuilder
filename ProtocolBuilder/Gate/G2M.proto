@@ -13,6 +13,6 @@ message MSG_G2M_REPEAT_LOGIN
 message MSG_G2M_MAX_UID 
 {
 	required string username = 1;
-	required string channelName = 2;
+	required int32 areaId = 2;
 }
 
