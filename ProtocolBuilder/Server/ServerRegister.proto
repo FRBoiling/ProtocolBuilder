@@ -11,11 +11,12 @@ message Server_Tag
 message MSG_Server_Register 
 {
 	required Server_Tag tag =1;
+	repeated LISTEN_INFO listenInfos =2;
 }
 
 message MSG_Server_Register_Return 
 {
-	required uint32 result =1;
+	required int32 result =1;
 	required Server_Tag tag =2;
 }
 
@@ -30,5 +31,11 @@ message MSG_Server_Connect_Command
 	required Server_Tag tag = 1;
 	required Connect_Info info= 2;
 	optional int32 connectType = 4;
+}
+
+message LISTEN_INFO 
+{
+	required int32 serverType= 1;
+	required int32 port =2; 
 }
 

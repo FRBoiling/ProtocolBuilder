@@ -1,10 +1,6 @@
 syntax = "proto2";
 package protocol.manager.zone;
 
-message MSG_M2Z_HEARTBEAT 0x340001
-{
-}
-
 message MSG_M2Z_REPEAT_LOGIN 0x340002
 {
 	required int32 Uid = 1;

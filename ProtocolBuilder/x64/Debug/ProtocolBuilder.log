@@ -1,4 +1,4 @@
-﻿生成启动时间为 2018/8/15 16:59:07。
+﻿生成启动时间为 2018/8/19 10:49:24。
      1>项目“D:\ProjectA\ProtocolBuilder\ProtocolBuilder\ProtocolBuilder.vcxproj”在节点 2 上(Build 个目标)。
      1>CustomBuild:
          Performing Custom Build Tools
@@ -12,6 +12,7 @@
          Performing Custom Build Tools
          Performing Custom Build Tools
          Performing Custom Build Tools
+         protobuf-net:protogen - code generator for .proto
          Performing Custom Build Tools
          Performing Custom Build Tools
          Performing Custom Build Tools
@@ -33,14 +34,70 @@
          xcopy D:\ProjectA\ProtocolBuilder\..\Protocol\*.cs  D:\ProjectA\ProtocolBuilder\..\TestTools\ProtocolTestTool\ClientProtocolLib\  /s /y /d
          xcopy D:\ProjectA\ProtocolBuilder\..\Protocol\*.cs  D:\ProjectA\ProtocolBuilder\..\Client\  /s /y /d
          :VCEnd
-         找不到文件 - *.java
-         复制了 0 个文件
-         找不到文件 - *.cs
-         复制了 0 个文件
-         找不到文件 - *.cs
-         复制了 0 个文件
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\barrack\gate\BRK2G.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\barrack\gate\BRK2GIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\barrack\global\BRK2GM.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\barrack\global\BRK2GMIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\barrack\manager\BRK2M.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\barrack\manager\BRK2MIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\client\Client.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\client\ClientIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\gate\global\G2GM.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\gate\global\G2GMIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\gate\manager\G2M.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\gate\manager\G2MIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\gate\zone\G2Z.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\gate\zone\G2ZIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\barrack\GM2BRK.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\barrack\GM2BRKIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\gate\GM2G.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\gate\GM2GIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\manager\GM2M.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\manager\GM2MIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\relation\GM2R.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\relation\GM2RIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\zone\GM2Z.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\global\zone\GM2ZIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\gate\M2G.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\gate\M2GIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\global\M2GM.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\global\M2GMIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\manager\M2M.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\manager\M2MIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\relation\M2R.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\relation\M2RIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\zone\M2Z.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\manager\zone\M2ZIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\msgId\Id.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\relation\global\R2GM.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\relation\global\R2GMIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\relation\manager\R2M.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\relation\manager\R2MIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\relation\relation\R2R.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\relation\relation\R2RIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\relation\zone\R2Z.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\relation\zone\R2ZIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\server\register\ServerRegister.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\server\register\ServerRegisterIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\zone\gate\Z2G.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\zone\gate\Z2GIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\zone\global\Z2GM.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\zone\global\Z2GMIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\zone\manager\Z2M.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\zone\manager\Z2MIdGenerater.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\zone\relation\Z2R.java
+         D:\ProjectA\ProtocolBuilder\..\Protocol\Java\protocol\zone\relation\Z2RIdGenerater.java
+         复制了 53 个文件
+         D:\ProjectA\ProtocolBuilder\..\Protocol\CSharp\protocol\client\Client.cs
+         D:\ProjectA\ProtocolBuilder\..\Protocol\CSharp\protocol\client\ClientIdGenerater.cs
+         D:\ProjectA\ProtocolBuilder\..\Protocol\CSharp\protocol\MsgId\Id.cs
+         复制了 3 个文件
+         D:\ProjectA\ProtocolBuilder\..\Protocol\CSharp\protocol\client\Client.cs
+         D:\ProjectA\ProtocolBuilder\..\Protocol\CSharp\protocol\client\ClientIdGenerater.cs
+         D:\ProjectA\ProtocolBuilder\..\Protocol\CSharp\protocol\MsgId\Id.cs
+         复制了 3 个文件
      1>已完成生成项目“D:\ProjectA\ProtocolBuilder\ProtocolBuilder\ProtocolBuilder.vcxproj”(Build 个目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:01.21
+已用时间 00:00:12.99
